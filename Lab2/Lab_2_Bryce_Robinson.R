@@ -1,0 +1,76 @@
+#set working directory
+setwd("~/FGCU/BSC4434C/Lab2")
+
+#load packages
+library(rentrez)
+library(seqinr)
+library(Biostrings)
+library(stringr)
+
+#retrieve E. coli sequences
+coli_seqs <- entrez_fetch(db = "nucleotide", id = "NC_000913", rettype = "fasta")
+
+#view sequences
+coli_seqs
+
+#convert from character to list
+substr(coli_seqs, 1, 100)
+coli_seq_split <- stringr::str_split(coli_seqs,"")
+coli_seq_split
+
+#save as fasta
+write(coli_seqs, "escherichia_coli.fasta")
+escherichia_coli <- read.fasta(file = "escherichia_coli.fasta")
+
+#determine length
+length(escherichia_coli)
+length(escherichia_coli$NC_000913)
+
+#visualize
+table(escherichia_coli$NC_000913)
+
+#create vector
+escherichia_coli_vect <- unlist(escherichia_coli$NC_000913)
+
+#GC content
+GC(escherichia_coli_vect)
+
+#base percentages
+coli_nucleotide_count <- table(escherichia_coli_vect)
+coli_nucleotide_percent <- prop.table(coli_nucleotide_count) * 100
+coli_nucleotide_percent
+
+#--------------------------------------------------------------------------------------------------
+
+#retrieve T. volcanium sequences
+volcanium_seqs <- entrez_fetch(db = "nucleotide", id = "NC_002689", rettype = "fasta")
+
+#view sequences
+volcanium_seqs
+
+#convert from character to list
+substr(volcanium_seqs, 1, 100)
+volcanium_seq_split <- stringr::str_split(volcanium_seqs,"")
+volcanium_seq_split
+
+#save as fasta
+write(volcanium_seqs, "thermoplasma_volcanium.fasta")
+thermoplasma_volcanium <- read.fasta(file = "thermoplasma_volcanium.fasta")
+
+#determine length
+length(thermoplasma_volcanium)
+length(thermoplasma_volcanium$NC_002689)
+
+#visualize
+table(thermoplasma_volcanium$NC_002689)
+
+#create vector
+thermoplasma_volcanium_vect <- unlist(thermoplasma_volcanium$NC_002689)
+
+#GC content
+GC(thermoplasma_volcanium_vect)
+
+#base percentages
+volcanium_nucleotide_count <- table(thermoplasma_volcanium_vect)
+volcanium_nucleotide_percent <- prop.table(volcanium_nucleotide_count) * 100
+volcanium_nucleotide_percent
