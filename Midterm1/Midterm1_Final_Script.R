@@ -1,0 +1,181 @@
+# Bryce Robinson Bioinformatics BSC4434C Midterm 1
+
+######################################################################
+#Set working directory and load packages
+######################################################################
+
+setwd("~/FGCU/BSC4434C/GitHub/Bioinformatics/Midterm1")
+library(Biostrings)
+library(msa)
+library(ape)
+library(rentrez)
+
+######################################################################
+# 1. Import and align DNA sequences
+######################################################################
+
+#read FASTA file and store as DNAStringSet
+human_seqs <- readDNAStringSet("sequences.fasta")
+
+#perform multiple sequence alignment with MUSCLE
+aligned_seqs <- msa(human_seqs, method="Muscle")
+
+######################################################################
+# 2. Measure alignment quality using column entropy
+######################################################################
+
+#convert MsaDNAMultipleAlignment into DNAStringSet
+aln <- as(aligned_seqs, "DNAStringSet")
+
+#convert DNAStringSet into character matrix
+aln_matrix <- as.matrix(aln)
+
+#calculate Shannon entropy using column
+calc_entropy <- function(column){
+  probs <- table(column)/length(column)
+  -sum(probs * log2(probs))
+}
+
+#apply calc_entropy to each column
+entropy_scores <- apply(aln_matrix, 2, calc_entropy)
+
+#calculate average entropy across all sites and remove NA values
+mean_entropy <- mean(entropy_scores, na.rm=TRUE)
+
+#print results
+cat("Mean entropy:", mean_entropy, "\n")
+
+#determine alignment quality
+if(mean_entropy < 0.5){
+  cat("Alignment quality: GOOD\n")
+} else {
+  cat("Alignment quality: POOR\n")
+}
+
+######################################################################
+# 3. Calculate consensus sequence
+######################################################################
+
+#determine consensus
+consensus_seq <- consensusString(aligned_seqs)
+
+#print sequence
+cat("Consensus sequence:\n", consensus_seq, "\n")
+
+######################################################################
+# 4. Calculate GC content
+######################################################################
+
+#convert sequences to character strings, split into individual bases, and convert into single vector
+all_bases <- unlist(strsplit(as.character(aligned_seqs), ""))
+
+#count total G and C bases and divide by total nucleotides
+gc_content <- sum(all_bases %in% c("G","C"))/sum(all_bases %in% c("A","T","G","C"))
+
+#print GC content
+cat("GC content:", gc_content, "\n")
+
+######################################################################
+# 5. Identify most different individual
+######################################################################
+
+#convert matrix into DNAbin format
+dna_bin <- as.DNAbin(aln_matrix)
+
+#calculate pairwise distances
+dist_matrix <- dist.dna(dna_bin, model="raw")
+
+#convert to matrix and print
+print(as.matrix(dist_matrix))
+
+#calculate average distance for each sample
+avg_dist <- rowMeans(as.matrix(dist_matrix))
+
+#indentify index of largest value and retrieve name
+most_different <- names(which.max(avg_dist))
+
+#print most different individual
+cat("Most different individual:", most_different, "\n")
+
+######################################################################
+# 6. Identify gene with BLAST
+######################################################################
+
+#print consensus sequence to copy into BLAST
+cat(consensus_seq)
+
+#BLASTn Query Results:
+#Accession Number: LC121775.1
+#Gene: Homo sapiens hbb gene for beta globin
+#Query Cover: 100%
+#E value: 0.0
+#Percent Identity: 100.00%
+
+######################################################################
+# 7. Translate most different individual into amino acid sequence
+######################################################################
+
+#index most different individual
+index <- which(names(aln) == most_different)
+
+#extract single DNAString from DNAStringSet
+target_seq <- aln[[index]]
+
+#remove gaps and non-ATGC characters
+clean_seq <- toupper(gsub("[^ATGC]", "", as.character(target_seq)))
+
+#count nucletotides
+count <- nchar(clean_seq)
+
+#trim sequence to a multiple of three for translation
+clean_seq <- substr(clean_seq, 1, count - (count %% 3))
+
+#convert to DNAString
+dna_string <- DNAString(clean_seq)
+
+#translate to amino acid sequence
+protein_seq <- Biostrings::translate(dna_string, if.fuzzy.codon="X")
+
+#convert to AAStringSet
+protein_set <- AAStringSet(protein_seq)
+
+#add name
+names(protein_set) <- most_different
+
+#output into FASTA file
+writeXStringSet(protein_set, "most_different_protein.fasta")
+
+######################################################################
+# 8. BLAST protein
+######################################################################
+
+#convert AAStringSet to characters
+protein_query <- as.character(protein_set[[1]])
+
+#print query
+cat(protein_query)
+
+#BLASTp Query Results:
+#Accession Number: KAI255834.1
+#Protein: hemoglobin subunit beta [Homo sapiens]
+#Query Cover: 14%
+#E value: 1e-09
+#Percent Identity: 100.00%
+
+######################################################################
+# 9. Identify gene disease association
+######################################################################
+
+#query NCBI Gene database
+gene_search <- entrez_search(db="gene", term="hbb[Gene]", retmax=1)
+
+#associate search ID to variable
+gene_id <- gene_search$ids[[1]]
+
+#retrive gene summary
+gene_record <- entrez_summary(db="gene", id=gene_id)
+
+#print summary results
+cat(as.character(gene_record$summary), "\n")
+
+#Associated diseases: Sickle cell disease and beta-thalassemia
