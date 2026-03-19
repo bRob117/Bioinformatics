@@ -1,0 +1,6 @@
+#Solanum lycopersicum lycopene beta cyclase gene UniProt accession matches
+#A0ABM1GMN2
+#A0AAF0QJQ2
+#A0A9J5ZDD7
+#A0ABD2UT19
+#A0AAV9L8J8
