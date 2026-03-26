@@ -1,0 +1,36 @@
+# -------------------------------------------------------------
+# Lab 11 ChatGPT Script Summary
+# -------------------------------------------------------------
+# This script recreates the FigTree visualization (Figure 21)
+# of a BEAST MCC phylogenetic tree using R.
+#
+# Because FigTree could not be run, the workflow was rebuilt using:
+# - treeio: to read the BEAST tree and preserve metadata
+# - ggtree: to generate plotting coordinates (x, y)
+# - ggplot2: to draw the tree manually
+# - dplyr/tibble: to manipulate and combine data
+# - ape: to reorder the tree (ladderize)
+#
+# Key steps:
+# 1. Read the BEAST tree including posterior and HPD information.
+# 2. Extract metadata (posterior values and 95% HPD intervals).
+# 3. Obtain plotting coordinates from ggtree.
+# 4. Join metadata with plotting coordinates by node.
+# 5. Transform the x-axis so tips are at 0 and the tree is shown
+#    as "time before present".
+# 6. Rebuild branch segments manually using parent-child relationships.
+# 7. Plot:
+#    - tree structure (black lines)
+#    - 95% HPD intervals (blue bars)
+#    - posterior support values at internal nodes
+#    - species labels at tips
+#
+# Interpretation:
+# - Branching pattern shows relationships among primates.
+# - Posterior values indicate support for each clade.
+# - Blue bars represent uncertainty (95% HPD) in node ages.
+# - X-axis represents time before present.
+#
+# Overall, this script reproduces the same information shown in FigTree,
+# but using R for full control over plotting and data handling.
+# -------------------------------------------------------------
