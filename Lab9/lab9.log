@@ -1,0 +1,230 @@
+INFO	2026-04-01 17:08:16	CreateSequenceDictionary	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** 
+https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    CreateSequenceDictionary -R genome/GCF_900604845.1_TTHNAR1_genomic.fna -O genome/GCF_900604845.1_TTHNAR1_genomic.dict
+**********
+
+
+17:08:16.317 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/export/share/software/biological/picard/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.intel.gkl.NativeLibraryLoader in an unnamed module (file:/export/share/software/biological/picard/picard.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[Wed Apr 01 17:08:16 EDT 2026] CreateSequenceDictionary OUTPUT=genome/GCF_900604845.1_TTHNAR1_genomic.dict REFERENCE=genome/GCF_900604845.1_TTHNAR1_genomic.fna    TRUNCATE_NAMES_AT_WHITESPACE=true NUM_SEQUENCES=2147483647 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Wed Apr 01 17:08:22 EDT 2026] Executing as ?@fgcu-compute03 on Linux 5.14.0-570.12.1.el9_6.x86_64 amd64; Java HotSpot(TM) 64-Bit Server VM 25.0.2+10-LTS-69; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: 3.4.0
+[Wed Apr 01 17:08:22 EDT 2026] picard.sam.CreateSequenceDictionary done. Elapsed time: 0.11 minutes.
+Runtime.totalMemory()=2164260864
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" picard.PicardException: file:///export/home/bio_class/barobinson4742/Bioinformatics/genome/GCF_900604845.1_TTHNAR1_genomic.dict already exists.  Delete this file and try again, or specify a different output file.
+	at picard.sam.CreateSequenceDictionary.doWork(CreateSequenceDictionary.java:227)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:281)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:105)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:115)
+Settings:
+  Output files: "genome/GCF_900604845.1_TTHNAR1_genomic.*.bt2"
+  Line rate: 6 (line is 64 bytes)
+  Lines per side: 1 (side is 64 bytes)
+  Offset rate: 4 (one in 16)
+  FTable chars: 10
+  Strings: unpacked
+  Max bucket size: default
+  Max bucket size, sqrt multiplier: default
+  Max bucket size, len divisor: 4
+  Difference-cover sample period: 1024
+  Endianness: little
+  Actual local endianness: little
+  Sanity checking: disabled
+  Assertions: disabled
+  Random seed: 0
+  Sizeofs: void*:8, int:4, long:8, size_t:8
+Input files DNA, FASTA:
+  genome/GCF_900604845.1_TTHNAR1_genomic.fna
+Building a SMALL index
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+bmax according to bmaxDivN setting: 619910
+Using parameters --bmax 464933 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 464933 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 2.47964e+06 (target: 464932)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 2479642 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:01
+Returning block of 2479643 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 389714
+fchr[G]: 1242781
+fchr[T]: 2088791
+fchr[$]: 2479642
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 5021396 bytes to primary EBWT file: genome/GCF_900604845.1_TTHNAR1_genomic.1.bt2
+Wrote 619916 bytes to secondary EBWT file: genome/GCF_900604845.1_TTHNAR1_genomic.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 2479642
+    bwtLen: 2479643
+    sz: 619911
+    bwtSz: 619911
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 154978
+    offsSz: 619912
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 12915
+    numLines: 12915
+    ebwtTotLen: 826560
+    ebwtTotSz: 826560
+    color: 0
+    reverse: 0
+Total time for call to driver() for forward index: 00:00:01
+Reading reference sizes
+  Time reading reference sizes: 00:00:00
+Calculating joined length
+Writing header
+Reserving space for joined string
+Joining reference sequences
+  Time to join reference sequences: 00:00:00
+  Time to reverse reference sequence: 00:00:00
+bmax according to bmaxDivN setting: 619910
+Using parameters --bmax 464933 --dcv 1024
+  Doing ahead-of-time memory usage test
+  Passed!  Constructing with these parameters: --bmax 464933 --dcv 1024
+Constructing suffix-array element generator
+Building DifferenceCoverSample
+  Building sPrime
+  Building sPrimeOrder
+  V-Sorting samples
+  V-Sorting samples time: 00:00:00
+  Allocating rank array
+  Ranking v-sort output
+  Ranking v-sort output time: 00:00:00
+  Invoking Larsson-Sadakane on ranks
+  Invoking Larsson-Sadakane on ranks time: 00:00:00
+  Sanity-checking and returning
+Building samples
+Reserving space for 12 sample suffixes
+Generating random suffixes
+QSorting 12 sample offsets, eliminating duplicates
+QSorting sample offsets, eliminating duplicates time: 00:00:00
+Multikey QSorting 12 samples
+  (Using difference cover)
+  Multikey QSorting samples time: 00:00:00
+Calculating bucket sizes
+Splitting and merging
+  Splitting and merging time: 00:00:00
+Avg bucket size: 2.47964e+06 (target: 464932)
+Converting suffix-array elements to index image
+Allocating ftab, absorbFtab
+Entering Ebwt loop
+Getting block 1 of 1
+  No samples; assembling all-inclusive block
+  Sorting block of length 2479642 for bucket 1
+  (Using difference cover)
+  Sorting block time: 00:00:01
+Returning block of 2479643 for bucket 1
+Exited Ebwt loop
+fchr[A]: 0
+fchr[C]: 389714
+fchr[G]: 1242781
+fchr[T]: 2088791
+fchr[$]: 2479642
+Exiting Ebwt::buildToDisk()
+Returning from initFromVector
+Wrote 5021396 bytes to primary EBWT file: genome/GCF_900604845.1_TTHNAR1_genomic.rev.1.bt2
+Wrote 619916 bytes to secondary EBWT file: genome/GCF_900604845.1_TTHNAR1_genomic.rev.2.bt2
+Re-opening _in1 and _in2 as input streams
+Returning from Ebwt constructor
+Headers:
+    len: 2479642
+    bwtLen: 2479643
+    sz: 619911
+    bwtSz: 619911
+    lineRate: 6
+    offRate: 4
+    offMask: 0xfffffff0
+    ftabChars: 10
+    eftabLen: 20
+    eftabSz: 80
+    ftabLen: 1048577
+    ftabSz: 4194308
+    offsLen: 154978
+    offsSz: 619912
+    lineSz: 64
+    sideSz: 64
+    sideBwtSz: 48
+    sideBwtLen: 192
+    numSides: 12915
+    numLines: 12915
+    ebwtTotLen: 826560
+    ebwtTotSz: 826560
+    color: 0
+    reverse: 1
+Total time for backward call to driver() for mirror index: 00:00:01
+250803 reads; of these:
+  250803 (100.00%) were paired; of these:
+    74085 (29.54%) aligned concordantly 0 times
+    173371 (69.13%) aligned concordantly exactly 1 time
+    3347 (1.33%) aligned concordantly >1 times
+    ----
+    74085 pairs aligned concordantly 0 times; of these:
+      610 (0.82%) aligned discordantly 1 time
+    ----
+    73475 pairs aligned 0 times concordantly or discordantly; of these:
+      146950 mates make up the pairs; of these:
+        144020 (98.01%) aligned 0 times
+        2598 (1.77%) aligned exactly 1 time
+        332 (0.23%) aligned >1 times
+71.29% overall alignment rate
