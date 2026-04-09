@@ -1,0 +1,180 @@
+--------------------------------------------------------------------------------
+ModelTest-NG v0.2.0
+
+Input data:
+  MSA:        /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta
+  Tree:       Maximum parsimony
+    file:           -
+  #taxa:            22
+  #sites:           5000
+  #patterns:        4496
+  Max. thread mem:  46 MB
+
+Output:
+  Log:           metazoa_modeltest.log
+  Starting tree: metazoa_modeltest.tree
+  Results:       metazoa_modeltest.out
+
+Selection options:
+  # dna schemes:      3
+  # dna models:       12
+  include model parameters:
+    Uniform:         true
+    p-inv (+I):      true
+    gamma (+G):      true
+    both (+I+G):     true
+    free rates (+R): false
+    fixed freqs:     false
+    estimated freqs: true
+    #categories:     4
+  gamma rates mode:   mean
+  asc bias:           none
+  epsilon (opt):      0.01
+  epsilon (par):      0.05
+  keep branches:      false
+
+Additional options:
+  verbosity:        very low
+  threads:          4/6
+  RNG seed:         12345
+  subtree repeats:  enabled
+--------------------------------------------------------------------------------
+
+BIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  GTR+I+G4          10    -74813.6578    150061.6924         0.0000    1.0000
+       2  HKY+I+G4           6    -74876.0672    150152.4424        90.7500    0.0000
+       3  GTR+G4             9    -74916.8916    150259.6428       197.9504    0.0000
+       4  HKY+G4             5    -74991.3772    150374.5454       312.8530    0.0000
+       5  F81+I+G4           5    -75421.4704    151234.7317      1173.0393    0.0000
+       6  F81+G4             4    -75557.0409    151497.3556      1435.6631    0.0000
+       7  GTR+I              9    -76251.9765    152929.8126      2868.1202    0.0000
+       8  HKY+I              5    -76305.3743    153002.5395      2940.8471    0.0000
+       9  F81+I              4    -76724.9331    153833.1400      3771.4476    0.0000
+      10  GTR                8    -78192.2923    156801.9271      6740.2347    0.0000
+--------------------------------------------------------------------------------
+Best model according to BIC
+---------------------------
+Model:              GTR+I+G4
+lnL:                -74813.6578
+Frequencies:        0.2785 0.2476 0.2664 0.2075
+Subst. Rates:       1.8164 2.5469 1.1269 1.3468 3.6551 1.0000 
+Inv. sites prop:    0.0840
+Gamma shape:        1.2304
+Score:              150061.6924
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              -
+Gamma:              0.0000
+Gamma-Inv:          1.0000
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              -
+Alpha:              0.6730
+Alpha-P.Inv:        1.2304
+P.Inv-Alpha:        0.0840
+Frequencies:        0.2785 0.2476 0.2664 0.2075 
+
+Commands:
+  > phyml  -i /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m 012345 -f m -v e -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m GTRGAMMAIX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta --model GTR+I+G4
+  > paup -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta
+  > iqtree -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m GTR+I+G4
+
+AIC       model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  GTR+I+G4          10    -74813.6578    149729.3156         0.0000    1.0000
+       2  HKY+I+G4           6    -74876.0672    149846.1343       116.8188    0.0000
+       3  GTR+G4             9    -74916.8916    149933.7831       204.4676    0.0000
+       4  HKY+G4             5    -74991.3772    150074.7545       345.4389    0.0000
+       5  F81+I+G4           5    -75421.4704    150934.9408      1205.6252    0.0000
+       6  F81+G4             4    -75557.0409    151204.0819      1474.7663    0.0000
+       7  GTR+I              9    -76251.9765    152603.9529      2874.6374    0.0000
+       8  HKY+I              5    -76305.3743    152702.7487      2973.4331    0.0000
+       9  F81+I              4    -76724.9331    153539.8663      3810.5507    0.0000
+      10  GTR                8    -78192.2923    156482.5846      6753.2691    0.0000
+--------------------------------------------------------------------------------
+Best model according to AIC
+---------------------------
+Model:              GTR+I+G4
+lnL:                -74813.6578
+Frequencies:        0.2785 0.2476 0.2664 0.2075
+Subst. Rates:       1.8164 2.5469 1.1269 1.3468 3.6551 1.0000 
+Inv. sites prop:    0.0840
+Gamma shape:        1.2304
+Score:              149729.3156
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              -
+Gamma:              0.0000
+Gamma-Inv:          1.0000
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              -
+Alpha:              0.6730
+Alpha-P.Inv:        1.2304
+P.Inv-Alpha:        0.0840
+Frequencies:        0.2785 0.2476 0.2664 0.2075 
+
+Commands:
+  > phyml  -i /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m 012345 -f m -v e -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m GTRGAMMAIX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta --model GTR+I+G4
+  > paup -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta
+  > iqtree -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m GTR+I+G4
+
+AICc      model              K            lnL          score          delta    weight
+--------------------------------------------------------------------------------
+       1  GTR+I+G4          10    -74813.6578    149730.3156         0.0000    1.0000
+       2  HKY+I+G4           6    -74876.0672    149846.1343       115.8188    0.0000
+       3  GTR+G4             9    -74916.8916    149934.7831       204.4676    0.0000
+       4  HKY+G4             5    -74991.3772    150074.7545       344.4389    0.0000
+       5  F81+I+G4           5    -75421.4704    150934.9408      1204.6252    0.0000
+       6  F81+G4             4    -75557.0409    151204.0819      1473.7663    0.0000
+       7  GTR+I              9    -76251.9765    152604.9529      2874.6374    0.0000
+       8  HKY+I              5    -76305.3743    152702.7487      2972.4331    0.0000
+       9  F81+I              4    -76724.9331    153539.8663      3809.5507    0.0000
+      10  GTR                8    -78192.2923    156482.5846      6752.2691    0.0000
+--------------------------------------------------------------------------------
+Best model according to AICc
+---------------------------
+Model:              GTR+I+G4
+lnL:                -74813.6578
+Frequencies:        0.2785 0.2476 0.2664 0.2075
+Subst. Rates:       1.8164 2.5469 1.1269 1.3468 3.6551 1.0000 
+Inv. sites prop:    0.0840
+Gamma shape:        1.2304
+Score:              149730.3156
+Weight:             1.0000
+---------------------------
+Parameter importances
+---------------------------
+P.Inv:              -
+Gamma:              0.0000
+Gamma-Inv:          1.0000
+Frequencies:        1.0000
+---------------------------
+Model averaged estimates
+---------------------------
+P.Inv:              -
+Alpha:              0.6730
+Alpha-P.Inv:        1.2304
+P.Inv-Alpha:        0.0840
+Frequencies:        0.2785 0.2476 0.2664 0.2075 
+
+Commands:
+  > phyml  -i /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m 012345 -f m -v e -a e -c 4 -o tlr
+  > raxmlHPC-SSE3 -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m GTRGAMMAIX -n EXEC_NAME -p PARSIMONY_SEED
+  > raxml-ng --msa /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta --model GTR+I+G4
+  > paup -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta
+  > iqtree -s /Users/brob117/Documents/Bioinformatics/jmodeltest-2.1.10/metazoa_alignment.5k.fasta -m GTR+I+G4
+Done
