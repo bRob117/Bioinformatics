@@ -1,0 +1,7 @@
+===== Processing SRR27639596 (task 12 of 15) =====
+application/gzip
+application/gzip
+Analysis complete for SRR27639596_1.fastq.gz
+Analysis complete for SRR27639596_2.fastq.gz
+Cleaned up sorted BAM to save disk space
+===== Done: SRR27639596 =====

@@ -1,0 +1,521 @@
+[bwa_index] Pack FASTA... 6.85 sec
+[bwa_index] Construct BWT for the packed sequence...
+[BWTIncCreate] textLength=1565040066, availableWord=122121760
+[BWTIncConstructFromPacked] 10 iterations done. 99999986 characters processed.
+[BWTIncConstructFromPacked] 20 iterations done. 199999986 characters processed.
+[BWTIncConstructFromPacked] 30 iterations done. 299999986 characters processed.
+[BWTIncConstructFromPacked] 40 iterations done. 399999986 characters processed.
+[BWTIncConstructFromPacked] 50 iterations done. 499999986 characters processed.
+[BWTIncConstructFromPacked] 60 iterations done. 599999986 characters processed.
+[BWTIncConstructFromPacked] 70 iterations done. 699999986 characters processed.
+[BWTIncConstructFromPacked] 80 iterations done. 799999986 characters processed.
+[BWTIncConstructFromPacked] 90 iterations done. 899920162 characters processed.
+[BWTIncConstructFromPacked] 100 iterations done. 992945346 characters processed.
+[BWTIncConstructFromPacked] 110 iterations done. 1075622418 characters processed.
+[BWTIncConstructFromPacked] 120 iterations done. 1149101986 characters processed.
+[BWTIncConstructFromPacked] 130 iterations done. 1214406802 characters processed.
+[BWTIncConstructFromPacked] 140 iterations done. 1272445890 characters processed.
+[BWTIncConstructFromPacked] 150 iterations done. 1324027138 characters processed.
+[BWTIncConstructFromPacked] 160 iterations done. 1369868674 characters processed.
+[BWTIncConstructFromPacked] 170 iterations done. 1410608706 characters processed.
+[BWTIncConstructFromPacked] 180 iterations done. 1446814562 characters processed.
+[BWTIncConstructFromPacked] 190 iterations done. 1478990370 characters processed.
+[BWTIncConstructFromPacked] 200 iterations done. 1507584274 characters processed.
+[BWTIncConstructFromPacked] 210 iterations done. 1532994562 characters processed.
+[BWTIncConstructFromPacked] 220 iterations done. 1555575282 characters processed.
+[bwt_gen] Finished constructing BWT in 225 iterations.
+[bwa_index] 561.23 seconds elapse.
+[bwa_index] Update BWT... 4.82 sec
+[bwa_index] Pack forward-only FASTA... 3.99 sec
+[bwa_index] Construct SA from BWT and Occ... 206.91 sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa index genome/SL4.0.genome.fasta
+[main] Real time: 789.407 sec; CPU: 783.800 sec
+Started analysis of SRR27639551_1.fastq.gz
+Started analysis of SRR27639551_2.fastq.gz
+Approx 5% complete for SRR27639551_1.fastq.gz
+Approx 5% complete for SRR27639551_2.fastq.gz
+Approx 10% complete for SRR27639551_1.fastq.gz
+Approx 10% complete for SRR27639551_2.fastq.gz
+Approx 15% complete for SRR27639551_1.fastq.gz
+Approx 15% complete for SRR27639551_2.fastq.gz
+Approx 20% complete for SRR27639551_1.fastq.gz
+Approx 20% complete for SRR27639551_2.fastq.gz
+Approx 25% complete for SRR27639551_1.fastq.gz
+Approx 25% complete for SRR27639551_2.fastq.gz
+Approx 30% complete for SRR27639551_1.fastq.gz
+Approx 30% complete for SRR27639551_2.fastq.gz
+Approx 35% complete for SRR27639551_1.fastq.gz
+Approx 35% complete for SRR27639551_2.fastq.gz
+Approx 40% complete for SRR27639551_1.fastq.gz
+Approx 40% complete for SRR27639551_2.fastq.gz
+Approx 45% complete for SRR27639551_1.fastq.gz
+Approx 45% complete for SRR27639551_2.fastq.gz
+Approx 50% complete for SRR27639551_1.fastq.gz
+Approx 50% complete for SRR27639551_2.fastq.gz
+Approx 55% complete for SRR27639551_1.fastq.gz
+Approx 55% complete for SRR27639551_2.fastq.gz
+Approx 60% complete for SRR27639551_1.fastq.gz
+Approx 60% complete for SRR27639551_2.fastq.gz
+Approx 65% complete for SRR27639551_1.fastq.gz
+Approx 65% complete for SRR27639551_2.fastq.gz
+Approx 70% complete for SRR27639551_1.fastq.gz
+Approx 70% complete for SRR27639551_2.fastq.gz
+Approx 75% complete for SRR27639551_1.fastq.gz
+Approx 75% complete for SRR27639551_2.fastq.gz
+Approx 80% complete for SRR27639551_1.fastq.gz
+Approx 80% complete for SRR27639551_2.fastq.gz
+Approx 85% complete for SRR27639551_1.fastq.gz
+Approx 85% complete for SRR27639551_2.fastq.gz
+Approx 90% complete for SRR27639551_1.fastq.gz
+Approx 90% complete for SRR27639551_2.fastq.gz
+Approx 95% complete for SRR27639551_1.fastq.gz
+Approx 95% complete for SRR27639551_2.fastq.gz
+Read1 before filtering:
+total reads: 84957741
+total bases: 12743661150
+Q20 bases: 12434285319(97.5723%)
+Q30 bases: 11870313387(93.1468%)
+Q40 bases: 0(0%)
+
+Read2 before filtering:
+total reads: 84957741
+total bases: 12743661150
+Q20 bases: 12160991511(95.4278%)
+Q30 bases: 11302131319(88.6883%)
+Q40 bases: 0(0%)
+
+Read1 after filtering:
+total reads: 84163604
+total bases: 12580985277
+Q20 bases: 12310176126(97.8475%)
+Q30 bases: 11767815495(93.5365%)
+Q40 bases: 0(0%)
+
+Read2 after filtering:
+total reads: 84163604
+total bases: 12580985277
+Q20 bases: 12070663432(95.9437%)
+Q30 bases: 11236819559(89.3159%)
+Q40 bases: 0(0%)
+
+Filtering result:
+reads passed filter: 168327208
+reads failed due to low quality: 1585516
+reads failed due to too many N: 2758
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 1840548
+bases trimmed due to adapters: 87446886
+
+Duplication rate: 14.2334%
+
+Insert size peak (evaluated by paired-end reads): 268
+
+JSON report: logs/SRR27639551.fastp.json
+HTML report: logs/SRR27639551.fastp.html
+
+fastp -i sra/SRR27639551_1.fastq.gz -I sra/SRR27639551_2.fastq.gz -o trimmed/SRR27639551_1.fastq.gz -O trimmed/SRR27639551_2.fastq.gz -n 10 --thread 16 -j logs/SRR27639551.fastp.json -h logs/SRR27639551.fastp.html 
+fastp v1.3.2, time used: 325 seconds
+[bam_sort_core] merging from 1 files and 16 in-memory blocks...
+INFO	2026-04-21 02:47:38	MarkDuplicates	
+
+********** NOTE: Picard's command line syntax is changing.
+**********
+********** For more information, please see:
+********** 
+https://github.com/broadinstitute/picard/wiki/Command-Line-Syntax-Transition-For-Users-(Pre-Transition)
+**********
+********** The command line looks like this in the new syntax:
+**********
+**********    MarkDuplicates -I alignment/SRR27639551.sorted.bam -O alignment/SRR27639551.dedup.bam -M logs/SRR27639551.dup_metrics.txt
+**********
+
+
+02:47:38.199 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/export/share/software/biological/picard/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.intel.gkl.NativeLibraryLoader in an unnamed module (file:/export/share/software/biological/picard/picard.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[Tue Apr 21 02:47:38 EDT 2026] MarkDuplicates INPUT=[alignment/SRR27639551.sorted.bam] OUTPUT=alignment/SRR27639551.dedup.bam METRICS_FILE=logs/SRR27639551.dup_metrics.txt    MAX_SEQUENCES_FOR_DISK_READ_ENDS_MAP=50000 MAX_FILE_HANDLES_FOR_READ_ENDS_MAP=8000 SORTING_COLLECTION_SIZE_RATIO=0.25 TAG_DUPLICATE_SET_MEMBERS=false REMOVE_SEQUENCING_DUPLICATES=false TAGGING_POLICY=DontTag CLEAR_DT=true DUPLEX_UMI=false FLOW_MODE=false FLOW_DUP_STRATEGY=FLOW_QUALITY_SUM_STRATEGY FLOW_USE_END_IN_UNPAIRED_READS=false FLOW_USE_UNPAIRED_CLIPPED_END=false FLOW_UNPAIRED_END_UNCERTAINTY=0 FLOW_UNPAIRED_START_UNCERTAINTY=0 FLOW_SKIP_FIRST_N_FLOWS=0 FLOW_Q_IS_KNOWN_END=false FLOW_EFFECTIVE_QUALITY_THRESHOLD=15 ADD_PG_TAG_TO_READS=true REMOVE_DUPLICATES=false ASSUME_SORTED=false DUPLICATE_SCORING_STRATEGY=SUM_OF_BASE_QUALITIES PROGRAM_RECORD_ID=MarkDuplicates PROGRAM_GROUP_NAME=MarkDuplicates READ_NAME_REGEX=<optimized capture of last three ':' separated fields as numeric values> OPTICAL_DUPLICATE_PIXEL_DISTANCE=100 MAX_OPTICAL_DUPLICATE_SET_SIZE=300000 VERBOSITY=INFO QUIET=false VALIDATION_STRINGENCY=STRICT COMPRESSION_LEVEL=5 MAX_RECORDS_IN_RAM=500000 CREATE_INDEX=false CREATE_MD5_FILE=false USE_JDK_DEFLATER=false USE_JDK_INFLATER=false
+[Tue Apr 21 02:47:44 EDT 2026] Executing as ?@fgcu-compute04 on Linux 5.14.0-570.12.1.el9_6.x86_64 amd64; OpenJDK 64-Bit Server VM 25.0.2-internal-adhoc.conda.src; Deflater: Intel; Inflater: Intel; Provider GCS is available; Picard version: 3.4.0
+INFO	2026-04-21 02:47:44	MarkDuplicates	Start of doWork freeMemory: 240418680; totalMemory: 251658240; maxMemory: 17179869184
+INFO	2026-04-21 02:47:44	MarkDuplicates	Reading input file and constructing read end information.
+INFO	2026-04-21 02:47:44	MarkDuplicates	Will retain up to 62245902 data points before spilling to disk.
+WARNING	2026-04-21 02:47:44	AbstractOpticalDuplicateFinderCommandLineProgram	A field field parsed out of a read name was expected to contain an integer and did not. Read name: SRR27639551.37778863. Cause: String 'SRR27639551.37778863' did not start with a parsable number.
+INFO	2026-04-21 02:47:50	MarkDuplicates	Read     1,000,000 records.  Elapsed time: 00:00:05s.  Time for last 1,000,000:    5s.  Last read position: SL4.0ch00:1,379,095
+INFO	2026-04-21 02:47:50	MarkDuplicates	Tracking 18185 as yet unmatched pairs. 14140 records in RAM.
+INFO	2026-04-21 02:47:54	MarkDuplicates	Read     2,000,000 records.  Elapsed time: 00:00:09s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:1,415,045
+INFO	2026-04-21 02:47:54	MarkDuplicates	Tracking 18381 as yet unmatched pairs. 13408 records in RAM.
+INFO	2026-04-21 02:47:59	MarkDuplicates	Read     3,000,000 records.  Elapsed time: 00:00:14s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:1,462,245
+INFO	2026-04-21 02:47:59	MarkDuplicates	Tracking 19032 as yet unmatched pairs. 13173 records in RAM.
+INFO	2026-04-21 02:48:04	MarkDuplicates	Read     4,000,000 records.  Elapsed time: 00:00:19s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:1,504,868
+INFO	2026-04-21 02:48:04	MarkDuplicates	Tracking 22584 as yet unmatched pairs. 15780 records in RAM.
+INFO	2026-04-21 02:48:08	MarkDuplicates	Read     5,000,000 records.  Elapsed time: 00:00:23s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:1,518,851
+INFO	2026-04-21 02:48:08	MarkDuplicates	Tracking 28376 as yet unmatched pairs. 20590 records in RAM.
+INFO	2026-04-21 02:48:13	MarkDuplicates	Read     6,000,000 records.  Elapsed time: 00:00:28s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:1,540,288
+INFO	2026-04-21 02:48:13	MarkDuplicates	Tracking 25006 as yet unmatched pairs. 16255 records in RAM.
+INFO	2026-04-21 02:48:17	MarkDuplicates	Read     7,000,000 records.  Elapsed time: 00:00:32s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:1,580,980
+INFO	2026-04-21 02:48:17	MarkDuplicates	Tracking 24127 as yet unmatched pairs. 14465 records in RAM.
+INFO	2026-04-21 02:48:22	MarkDuplicates	Read     8,000,000 records.  Elapsed time: 00:00:37s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:2,280,311
+INFO	2026-04-21 02:48:22	MarkDuplicates	Tracking 29822 as yet unmatched pairs. 16754 records in RAM.
+INFO	2026-04-21 02:48:26	MarkDuplicates	Read     9,000,000 records.  Elapsed time: 00:00:42s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:2,497,810
+INFO	2026-04-21 02:48:26	MarkDuplicates	Tracking 33211 as yet unmatched pairs. 19019 records in RAM.
+INFO	2026-04-21 02:48:31	MarkDuplicates	Read    10,000,000 records.  Elapsed time: 00:00:46s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:2,921,063
+INFO	2026-04-21 02:48:31	MarkDuplicates	Tracking 34346 as yet unmatched pairs. 17528 records in RAM.
+INFO	2026-04-21 02:48:36	MarkDuplicates	Read    11,000,000 records.  Elapsed time: 00:00:51s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:3,709,957
+INFO	2026-04-21 02:48:36	MarkDuplicates	Tracking 43146 as yet unmatched pairs. 19240 records in RAM.
+INFO	2026-04-21 02:48:40	MarkDuplicates	Read    12,000,000 records.  Elapsed time: 00:00:55s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:3,801,261
+INFO	2026-04-21 02:48:40	MarkDuplicates	Tracking 45500 as yet unmatched pairs. 20416 records in RAM.
+INFO	2026-04-21 02:48:45	MarkDuplicates	Read    13,000,000 records.  Elapsed time: 00:01:00s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:3,850,388
+INFO	2026-04-21 02:48:45	MarkDuplicates	Tracking 45254 as yet unmatched pairs. 19216 records in RAM.
+INFO	2026-04-21 02:48:50	MarkDuplicates	Read    14,000,000 records.  Elapsed time: 00:01:05s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:4,817,376
+INFO	2026-04-21 02:48:50	MarkDuplicates	Tracking 47031 as yet unmatched pairs. 18725 records in RAM.
+INFO	2026-04-21 02:48:54	MarkDuplicates	Read    15,000,000 records.  Elapsed time: 00:01:09s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:4,906,498
+INFO	2026-04-21 02:48:54	MarkDuplicates	Tracking 49260 as yet unmatched pairs. 19598 records in RAM.
+INFO	2026-04-21 02:48:58	MarkDuplicates	Read    16,000,000 records.  Elapsed time: 00:01:14s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:5,231,985
+INFO	2026-04-21 02:48:58	MarkDuplicates	Tracking 68217 as yet unmatched pairs. 36531 records in RAM.
+INFO	2026-04-21 02:49:03	MarkDuplicates	Read    17,000,000 records.  Elapsed time: 00:01:18s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:5,579,801
+INFO	2026-04-21 02:49:03	MarkDuplicates	Tracking 53334 as yet unmatched pairs. 20074 records in RAM.
+INFO	2026-04-21 02:49:07	MarkDuplicates	Read    18,000,000 records.  Elapsed time: 00:01:23s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:5,844,843
+INFO	2026-04-21 02:49:07	MarkDuplicates	Tracking 55674 as yet unmatched pairs. 20828 records in RAM.
+INFO	2026-04-21 02:49:12	MarkDuplicates	Read    19,000,000 records.  Elapsed time: 00:01:27s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:6,195,491
+INFO	2026-04-21 02:49:12	MarkDuplicates	Tracking 57592 as yet unmatched pairs. 20914 records in RAM.
+INFO	2026-04-21 02:49:16	MarkDuplicates	Read    20,000,000 records.  Elapsed time: 00:01:32s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:6,283,001
+INFO	2026-04-21 02:49:16	MarkDuplicates	Tracking 57476 as yet unmatched pairs. 19507 records in RAM.
+INFO	2026-04-21 02:49:21	MarkDuplicates	Read    21,000,000 records.  Elapsed time: 00:01:36s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:6,513,179
+INFO	2026-04-21 02:49:21	MarkDuplicates	Tracking 58986 as yet unmatched pairs. 19067 records in RAM.
+INFO	2026-04-21 02:49:25	MarkDuplicates	Read    22,000,000 records.  Elapsed time: 00:01:41s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:6,867,228
+INFO	2026-04-21 02:49:25	MarkDuplicates	Tracking 61305 as yet unmatched pairs. 19261 records in RAM.
+INFO	2026-04-21 02:49:30	MarkDuplicates	Read    23,000,000 records.  Elapsed time: 00:01:45s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:7,208,975
+INFO	2026-04-21 02:49:30	MarkDuplicates	Tracking 60768 as yet unmatched pairs. 17001 records in RAM.
+INFO	2026-04-21 02:49:35	MarkDuplicates	Read    24,000,000 records.  Elapsed time: 00:01:50s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:7,370,423
+INFO	2026-04-21 02:49:35	MarkDuplicates	Tracking 62175 as yet unmatched pairs. 17350 records in RAM.
+INFO	2026-04-21 02:49:39	MarkDuplicates	Read    25,000,000 records.  Elapsed time: 00:01:54s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:7,726,639
+INFO	2026-04-21 02:49:39	MarkDuplicates	Tracking 61298 as yet unmatched pairs. 14883 records in RAM.
+INFO	2026-04-21 02:49:44	MarkDuplicates	Read    26,000,000 records.  Elapsed time: 00:01:59s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:8,142,261
+INFO	2026-04-21 02:49:44	MarkDuplicates	Tracking 62461 as yet unmatched pairs. 13633 records in RAM.
+INFO	2026-04-21 02:49:49	MarkDuplicates	Read    27,000,000 records.  Elapsed time: 00:02:04s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch00:9,234,583
+INFO	2026-04-21 02:49:49	MarkDuplicates	Tracking 66843 as yet unmatched pairs. 6198 records in RAM.
+INFO	2026-04-21 02:49:53	MarkDuplicates	Read    28,000,000 records.  Elapsed time: 00:02:08s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:4,420,605
+INFO	2026-04-21 02:49:53	MarkDuplicates	Tracking 70861 as yet unmatched pairs. 4105 records in RAM.
+INFO	2026-04-21 02:49:58	MarkDuplicates	Read    29,000,000 records.  Elapsed time: 00:02:13s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:9,816,126
+INFO	2026-04-21 02:49:58	MarkDuplicates	Tracking 77243 as yet unmatched pairs. 5530 records in RAM.
+INFO	2026-04-21 02:50:02	MarkDuplicates	Read    30,000,000 records.  Elapsed time: 00:02:17s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:14,008,014
+INFO	2026-04-21 02:50:02	MarkDuplicates	Tracking 88348 as yet unmatched pairs. 7586 records in RAM.
+INFO	2026-04-21 02:50:07	MarkDuplicates	Read    31,000,000 records.  Elapsed time: 00:02:22s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:19,583,707
+INFO	2026-04-21 02:50:07	MarkDuplicates	Tracking 90695 as yet unmatched pairs. 5385 records in RAM.
+INFO	2026-04-21 02:50:11	MarkDuplicates	Read    32,000,000 records.  Elapsed time: 00:02:26s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:25,141,730
+INFO	2026-04-21 02:50:11	MarkDuplicates	Tracking 93317 as yet unmatched pairs. 4403 records in RAM.
+INFO	2026-04-21 02:50:16	MarkDuplicates	Read    33,000,000 records.  Elapsed time: 00:02:31s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:30,742,002
+INFO	2026-04-21 02:50:16	MarkDuplicates	Tracking 96733 as yet unmatched pairs. 4344 records in RAM.
+INFO	2026-04-21 02:50:20	MarkDuplicates	Read    34,000,000 records.  Elapsed time: 00:02:35s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:34,912,210
+INFO	2026-04-21 02:50:20	MarkDuplicates	Tracking 101415 as yet unmatched pairs. 5304 records in RAM.
+INFO	2026-04-21 02:50:25	MarkDuplicates	Read    35,000,000 records.  Elapsed time: 00:02:40s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:40,117,973
+INFO	2026-04-21 02:50:25	MarkDuplicates	Tracking 105594 as yet unmatched pairs. 3928 records in RAM.
+INFO	2026-04-21 02:50:29	MarkDuplicates	Read    36,000,000 records.  Elapsed time: 00:02:44s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:45,570,676
+INFO	2026-04-21 02:50:29	MarkDuplicates	Tracking 110173 as yet unmatched pairs. 3636 records in RAM.
+INFO	2026-04-21 02:50:34	MarkDuplicates	Read    37,000,000 records.  Elapsed time: 00:02:49s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:51,059,876
+INFO	2026-04-21 02:50:34	MarkDuplicates	Tracking 114554 as yet unmatched pairs. 3280 records in RAM.
+INFO	2026-04-21 02:50:38	MarkDuplicates	Read    38,000,000 records.  Elapsed time: 00:02:53s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:56,555,684
+INFO	2026-04-21 02:50:38	MarkDuplicates	Tracking 118639 as yet unmatched pairs. 2995 records in RAM.
+INFO	2026-04-21 02:50:42	MarkDuplicates	Read    39,000,000 records.  Elapsed time: 00:02:58s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:62,132,567
+INFO	2026-04-21 02:50:42	MarkDuplicates	Tracking 122763 as yet unmatched pairs. 2403 records in RAM.
+INFO	2026-04-21 02:50:47	MarkDuplicates	Read    40,000,000 records.  Elapsed time: 00:03:02s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:67,731,122
+INFO	2026-04-21 02:50:47	MarkDuplicates	Tracking 126727 as yet unmatched pairs. 1766 records in RAM.
+INFO	2026-04-21 02:50:51	MarkDuplicates	Read    41,000,000 records.  Elapsed time: 00:03:06s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:73,323,330
+INFO	2026-04-21 02:50:51	MarkDuplicates	Tracking 130759 as yet unmatched pairs. 1405 records in RAM.
+INFO	2026-04-21 02:50:56	MarkDuplicates	Read    42,000,000 records.  Elapsed time: 00:03:11s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:78,900,684
+INFO	2026-04-21 02:50:56	MarkDuplicates	Tracking 134355 as yet unmatched pairs. 786 records in RAM.
+INFO	2026-04-21 02:51:00	MarkDuplicates	Read    43,000,000 records.  Elapsed time: 00:03:15s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:84,524,661
+INFO	2026-04-21 02:51:00	MarkDuplicates	Tracking 136192 as yet unmatched pairs. 458 records in RAM.
+INFO	2026-04-21 02:51:04	MarkDuplicates	Read    44,000,000 records.  Elapsed time: 00:03:20s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch01:90,154,334
+INFO	2026-04-21 02:51:04	MarkDuplicates	Tracking 138351 as yet unmatched pairs. 145 records in RAM.
+INFO	2026-04-21 02:51:09	MarkDuplicates	Read    45,000,000 records.  Elapsed time: 00:03:24s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:4,213,032
+INFO	2026-04-21 02:51:09	MarkDuplicates	Tracking 142418 as yet unmatched pairs. 7354 records in RAM.
+INFO	2026-04-21 02:51:13	MarkDuplicates	Read    46,000,000 records.  Elapsed time: 00:03:29s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:9,785,960
+INFO	2026-04-21 02:51:13	MarkDuplicates	Tracking 146561 as yet unmatched pairs. 6694 records in RAM.
+INFO	2026-04-21 02:51:18	MarkDuplicates	Read    47,000,000 records.  Elapsed time: 00:03:33s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:15,319,764
+INFO	2026-04-21 02:51:18	MarkDuplicates	Tracking 150100 as yet unmatched pairs. 6168 records in RAM.
+INFO	2026-04-21 02:51:22	MarkDuplicates	Read    48,000,000 records.  Elapsed time: 00:03:37s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:20,713,306
+INFO	2026-04-21 02:51:22	MarkDuplicates	Tracking 156194 as yet unmatched pairs. 4818 records in RAM.
+INFO	2026-04-21 02:51:27	MarkDuplicates	Read    49,000,000 records.  Elapsed time: 00:03:42s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:26,011,710
+INFO	2026-04-21 02:51:27	MarkDuplicates	Tracking 159720 as yet unmatched pairs. 3372 records in RAM.
+INFO	2026-04-21 02:51:31	MarkDuplicates	Read    50,000,000 records.  Elapsed time: 00:03:46s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:31,551,758
+INFO	2026-04-21 02:51:31	MarkDuplicates	Tracking 163672 as yet unmatched pairs. 2548 records in RAM.
+INFO	2026-04-21 02:51:35	MarkDuplicates	Read    51,000,000 records.  Elapsed time: 00:03:51s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:37,212,952
+INFO	2026-04-21 02:51:35	MarkDuplicates	Tracking 166797 as yet unmatched pairs. 1856 records in RAM.
+INFO	2026-04-21 02:51:40	MarkDuplicates	Read    52,000,000 records.  Elapsed time: 00:03:55s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:42,891,661
+INFO	2026-04-21 02:51:40	MarkDuplicates	Tracking 169016 as yet unmatched pairs. 1364 records in RAM.
+INFO	2026-04-21 02:51:44	MarkDuplicates	Read    53,000,000 records.  Elapsed time: 00:03:59s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch02:48,518,691
+INFO	2026-04-21 02:51:44	MarkDuplicates	Tracking 170759 as yet unmatched pairs. 854 records in RAM.
+INFO	2026-04-21 02:51:49	MarkDuplicates	Read    54,000,000 records.  Elapsed time: 00:04:04s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:634,914
+INFO	2026-04-21 02:51:49	MarkDuplicates	Tracking 172565 as yet unmatched pairs. 12619 records in RAM.
+INFO	2026-04-21 02:51:53	MarkDuplicates	Read    55,000,000 records.  Elapsed time: 00:04:08s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:5,970,302
+INFO	2026-04-21 02:51:53	MarkDuplicates	Tracking 175517 as yet unmatched pairs. 11716 records in RAM.
+INFO	2026-04-21 02:51:58	MarkDuplicates	Read    56,000,000 records.  Elapsed time: 00:04:13s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:11,568,846
+INFO	2026-04-21 02:51:58	MarkDuplicates	Tracking 179372 as yet unmatched pairs. 10994 records in RAM.
+INFO	2026-04-21 02:52:02	MarkDuplicates	Read    57,000,000 records.  Elapsed time: 00:04:17s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:16,668,173
+INFO	2026-04-21 02:52:02	MarkDuplicates	Tracking 182667 as yet unmatched pairs. 10005 records in RAM.
+INFO	2026-04-21 02:52:07	MarkDuplicates	Read    58,000,000 records.  Elapsed time: 00:04:22s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:22,246,965
+INFO	2026-04-21 02:52:07	MarkDuplicates	Tracking 186075 as yet unmatched pairs. 9073 records in RAM.
+INFO	2026-04-21 02:52:11	MarkDuplicates	Read    59,000,000 records.  Elapsed time: 00:04:26s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:27,646,070
+INFO	2026-04-21 02:52:11	MarkDuplicates	Tracking 189868 as yet unmatched pairs. 7887 records in RAM.
+INFO	2026-04-21 02:52:15	MarkDuplicates	Read    60,000,000 records.  Elapsed time: 00:04:30s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:33,145,444
+INFO	2026-04-21 02:52:15	MarkDuplicates	Tracking 193546 as yet unmatched pairs. 6433 records in RAM.
+INFO	2026-04-21 02:52:20	MarkDuplicates	Read    61,000,000 records.  Elapsed time: 00:04:35s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:38,686,913
+INFO	2026-04-21 02:52:20	MarkDuplicates	Tracking 195800 as yet unmatched pairs. 5561 records in RAM.
+INFO	2026-04-21 02:52:24	MarkDuplicates	Read    62,000,000 records.  Elapsed time: 00:04:39s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:44,159,407
+INFO	2026-04-21 02:52:24	MarkDuplicates	Tracking 198427 as yet unmatched pairs. 4372 records in RAM.
+INFO	2026-04-21 02:52:50	MarkDuplicates	Read    63,000,000 records.  Elapsed time: 00:05:05s.  Time for last 1,000,000:   25s.  Last read position: SL4.0ch03:49,784,301
+INFO	2026-04-21 02:52:50	MarkDuplicates	Tracking 201340 as yet unmatched pairs. 3079 records in RAM.
+INFO	2026-04-21 02:52:54	MarkDuplicates	Read    64,000,000 records.  Elapsed time: 00:05:09s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:55,374,592
+INFO	2026-04-21 02:52:54	MarkDuplicates	Tracking 203923 as yet unmatched pairs. 1862 records in RAM.
+INFO	2026-04-21 02:52:58	MarkDuplicates	Read    65,000,000 records.  Elapsed time: 00:05:14s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch03:60,919,594
+INFO	2026-04-21 02:52:58	MarkDuplicates	Tracking 205544 as yet unmatched pairs. 1076 records in RAM.
+INFO	2026-04-21 02:53:03	MarkDuplicates	Read    66,000,000 records.  Elapsed time: 00:05:18s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:965,488
+INFO	2026-04-21 02:53:03	MarkDuplicates	Tracking 207159 as yet unmatched pairs. 17853 records in RAM.
+INFO	2026-04-21 02:53:07	MarkDuplicates	Read    67,000,000 records.  Elapsed time: 00:05:22s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:6,606,966
+INFO	2026-04-21 02:53:07	MarkDuplicates	Tracking 209677 as yet unmatched pairs. 16638 records in RAM.
+INFO	2026-04-21 02:53:12	MarkDuplicates	Read    68,000,000 records.  Elapsed time: 00:05:27s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:12,160,830
+INFO	2026-04-21 02:53:12	MarkDuplicates	Tracking 212010 as yet unmatched pairs. 15711 records in RAM.
+INFO	2026-04-21 02:53:16	MarkDuplicates	Read    69,000,000 records.  Elapsed time: 00:05:31s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:17,706,569
+INFO	2026-04-21 02:53:16	MarkDuplicates	Tracking 214340 as yet unmatched pairs. 14399 records in RAM.
+INFO	2026-04-21 02:53:20	MarkDuplicates	Read    70,000,000 records.  Elapsed time: 00:05:35s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:23,273,604
+INFO	2026-04-21 02:53:20	MarkDuplicates	Tracking 216895 as yet unmatched pairs. 13154 records in RAM.
+INFO	2026-04-21 02:53:25	MarkDuplicates	Read    71,000,000 records.  Elapsed time: 00:05:40s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:28,801,558
+INFO	2026-04-21 02:53:25	MarkDuplicates	Tracking 218925 as yet unmatched pairs. 11754 records in RAM.
+INFO	2026-04-21 02:53:29	MarkDuplicates	Read    72,000,000 records.  Elapsed time: 00:05:44s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:34,291,768
+INFO	2026-04-21 02:53:29	MarkDuplicates	Tracking 221271 as yet unmatched pairs. 10252 records in RAM.
+INFO	2026-04-21 02:53:34	MarkDuplicates	Read    73,000,000 records.  Elapsed time: 00:05:49s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:39,842,218
+INFO	2026-04-21 02:53:34	MarkDuplicates	Tracking 223589 as yet unmatched pairs. 8510 records in RAM.
+INFO	2026-04-21 02:53:38	MarkDuplicates	Read    74,000,000 records.  Elapsed time: 00:05:53s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:45,409,639
+INFO	2026-04-21 02:53:38	MarkDuplicates	Tracking 225529 as yet unmatched pairs. 6835 records in RAM.
+INFO	2026-04-21 02:53:42	MarkDuplicates	Read    75,000,000 records.  Elapsed time: 00:05:57s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:50,986,420
+INFO	2026-04-21 02:53:42	MarkDuplicates	Tracking 227659 as yet unmatched pairs. 5350 records in RAM.
+INFO	2026-04-21 02:53:47	MarkDuplicates	Read    76,000,000 records.  Elapsed time: 00:06:02s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:56,458,807
+INFO	2026-04-21 02:53:47	MarkDuplicates	Tracking 229452 as yet unmatched pairs. 2588 records in RAM.
+INFO	2026-04-21 02:53:51	MarkDuplicates	Read    77,000,000 records.  Elapsed time: 00:06:06s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch04:62,077,728
+INFO	2026-04-21 02:53:51	MarkDuplicates	Tracking 230858 as yet unmatched pairs. 809 records in RAM.
+INFO	2026-04-21 02:53:56	MarkDuplicates	Read    78,000,000 records.  Elapsed time: 00:06:11s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:3,008,032
+INFO	2026-04-21 02:53:56	MarkDuplicates	Tracking 231704 as yet unmatched pairs. 19238 records in RAM.
+INFO	2026-04-21 02:54:00	MarkDuplicates	Read    79,000,000 records.  Elapsed time: 00:06:15s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:8,729,581
+INFO	2026-04-21 02:54:00	MarkDuplicates	Tracking 233499 as yet unmatched pairs. 18031 records in RAM.
+INFO	2026-04-21 02:54:04	MarkDuplicates	Read    80,000,000 records.  Elapsed time: 00:06:20s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:14,301,951
+INFO	2026-04-21 02:54:04	MarkDuplicates	Tracking 235377 as yet unmatched pairs. 16501 records in RAM.
+INFO	2026-04-21 02:54:09	MarkDuplicates	Read    81,000,000 records.  Elapsed time: 00:06:24s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:19,835,927
+INFO	2026-04-21 02:54:09	MarkDuplicates	Tracking 237091 as yet unmatched pairs. 15136 records in RAM.
+INFO	2026-04-21 02:54:13	MarkDuplicates	Read    82,000,000 records.  Elapsed time: 00:06:28s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:25,413,045
+INFO	2026-04-21 02:54:13	MarkDuplicates	Tracking 238830 as yet unmatched pairs. 13467 records in RAM.
+INFO	2026-04-21 02:54:17	MarkDuplicates	Read    83,000,000 records.  Elapsed time: 00:06:33s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:30,863,606
+INFO	2026-04-21 02:54:17	MarkDuplicates	Tracking 241095 as yet unmatched pairs. 11278 records in RAM.
+INFO	2026-04-21 02:54:22	MarkDuplicates	Read    84,000,000 records.  Elapsed time: 00:06:37s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:36,359,143
+INFO	2026-04-21 02:54:22	MarkDuplicates	Tracking 242285 as yet unmatched pairs. 9500 records in RAM.
+INFO	2026-04-21 02:54:26	MarkDuplicates	Read    85,000,000 records.  Elapsed time: 00:06:41s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:41,892,744
+INFO	2026-04-21 02:54:26	MarkDuplicates	Tracking 243420 as yet unmatched pairs. 7735 records in RAM.
+INFO	2026-04-21 02:54:31	MarkDuplicates	Read    86,000,000 records.  Elapsed time: 00:06:46s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:47,427,784
+INFO	2026-04-21 02:54:31	MarkDuplicates	Tracking 244368 as yet unmatched pairs. 5726 records in RAM.
+INFO	2026-04-21 02:54:35	MarkDuplicates	Read    87,000,000 records.  Elapsed time: 00:06:50s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:53,030,424
+INFO	2026-04-21 02:54:35	MarkDuplicates	Tracking 245645 as yet unmatched pairs. 4210 records in RAM.
+INFO	2026-04-21 02:54:39	MarkDuplicates	Read    88,000,000 records.  Elapsed time: 00:06:55s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:58,606,243
+INFO	2026-04-21 02:54:39	MarkDuplicates	Tracking 246842 as yet unmatched pairs. 2036 records in RAM.
+INFO	2026-04-21 02:54:44	MarkDuplicates	Read    89,000,000 records.  Elapsed time: 00:06:59s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch05:64,348,380
+INFO	2026-04-21 02:54:44	MarkDuplicates	Tracking 248387 as yet unmatched pairs. 289 records in RAM.
+INFO	2026-04-21 02:54:48	MarkDuplicates	Read    90,000,000 records.  Elapsed time: 00:07:03s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:4,657,153
+INFO	2026-04-21 02:54:48	MarkDuplicates	Tracking 249454 as yet unmatched pairs. 18250 records in RAM.
+INFO	2026-04-21 02:54:53	MarkDuplicates	Read    91,000,000 records.  Elapsed time: 00:07:08s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:10,076,697
+INFO	2026-04-21 02:54:53	MarkDuplicates	Tracking 249655 as yet unmatched pairs. 14929 records in RAM.
+INFO	2026-04-21 02:54:57	MarkDuplicates	Read    92,000,000 records.  Elapsed time: 00:07:12s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:15,708,689
+INFO	2026-04-21 02:54:57	MarkDuplicates	Tracking 249180 as yet unmatched pairs. 11390 records in RAM.
+INFO	2026-04-21 02:55:02	MarkDuplicates	Read    93,000,000 records.  Elapsed time: 00:07:17s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:21,253,361
+INFO	2026-04-21 02:55:02	MarkDuplicates	Tracking 249769 as yet unmatched pairs. 9183 records in RAM.
+INFO	2026-04-21 02:55:06	MarkDuplicates	Read    94,000,000 records.  Elapsed time: 00:07:21s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:26,857,210
+INFO	2026-04-21 02:55:06	MarkDuplicates	Tracking 250929 as yet unmatched pairs. 6679 records in RAM.
+INFO	2026-04-21 02:55:10	MarkDuplicates	Read    95,000,000 records.  Elapsed time: 00:07:25s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:32,406,066
+INFO	2026-04-21 02:55:10	MarkDuplicates	Tracking 251712 as yet unmatched pairs. 3945 records in RAM.
+INFO	2026-04-21 02:55:15	MarkDuplicates	Read    96,000,000 records.  Elapsed time: 00:07:30s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:38,039,565
+INFO	2026-04-21 02:55:15	MarkDuplicates	Tracking 252056 as yet unmatched pairs. 1923 records in RAM.
+INFO	2026-04-21 02:55:19	MarkDuplicates	Read    97,000,000 records.  Elapsed time: 00:07:34s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch06:43,667,487
+INFO	2026-04-21 02:55:19	MarkDuplicates	Tracking 252700 as yet unmatched pairs. 740 records in RAM.
+INFO	2026-04-21 02:55:24	MarkDuplicates	Read    98,000,000 records.  Elapsed time: 00:07:39s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:2,053,437
+INFO	2026-04-21 02:55:24	MarkDuplicates	Tracking 253186 as yet unmatched pairs. 33822 records in RAM.
+INFO	2026-04-21 02:55:28	MarkDuplicates	Read    99,000,000 records.  Elapsed time: 00:07:43s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:7,615,554
+INFO	2026-04-21 02:55:28	MarkDuplicates	Tracking 254136 as yet unmatched pairs. 32535 records in RAM.
+INFO	2026-04-21 02:55:33	MarkDuplicates	Read   100,000,000 records.  Elapsed time: 00:07:48s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:13,163,995
+INFO	2026-04-21 02:55:33	MarkDuplicates	Tracking 254915 as yet unmatched pairs. 30500 records in RAM.
+INFO	2026-04-21 02:55:37	MarkDuplicates	Read   101,000,000 records.  Elapsed time: 00:07:52s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:18,666,209
+INFO	2026-04-21 02:55:37	MarkDuplicates	Tracking 255013 as yet unmatched pairs. 27521 records in RAM.
+INFO	2026-04-21 02:55:41	MarkDuplicates	Read   102,000,000 records.  Elapsed time: 00:07:56s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:24,141,496
+INFO	2026-04-21 02:55:41	MarkDuplicates	Tracking 255046 as yet unmatched pairs. 25253 records in RAM.
+INFO	2026-04-21 02:55:46	MarkDuplicates	Read   103,000,000 records.  Elapsed time: 00:08:01s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:29,690,361
+INFO	2026-04-21 02:55:46	MarkDuplicates	Tracking 255332 as yet unmatched pairs. 22851 records in RAM.
+INFO	2026-04-21 02:55:50	MarkDuplicates	Read   104,000,000 records.  Elapsed time: 00:08:05s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:35,202,647
+INFO	2026-04-21 02:55:50	MarkDuplicates	Tracking 255193 as yet unmatched pairs. 20505 records in RAM.
+INFO	2026-04-21 02:55:55	MarkDuplicates	Read   105,000,000 records.  Elapsed time: 00:08:10s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:40,727,201
+INFO	2026-04-21 02:55:55	MarkDuplicates	Tracking 255269 as yet unmatched pairs. 18514 records in RAM.
+INFO	2026-04-21 02:55:59	MarkDuplicates	Read   106,000,000 records.  Elapsed time: 00:08:14s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:46,398,033
+INFO	2026-04-21 02:55:59	MarkDuplicates	Tracking 255187 as yet unmatched pairs. 15994 records in RAM.
+INFO	2026-04-21 02:56:03	MarkDuplicates	Read   107,000,000 records.  Elapsed time: 00:08:19s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:51,968,491
+INFO	2026-04-21 02:56:03	MarkDuplicates	Tracking 255104 as yet unmatched pairs. 13471 records in RAM.
+INFO	2026-04-21 02:56:08	MarkDuplicates	Read   108,000,000 records.  Elapsed time: 00:08:23s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:57,618,198
+INFO	2026-04-21 02:56:08	MarkDuplicates	Tracking 255298 as yet unmatched pairs. 10809 records in RAM.
+INFO	2026-04-21 02:56:12	MarkDuplicates	Read   109,000,000 records.  Elapsed time: 00:08:27s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch07:63,842,096
+INFO	2026-04-21 02:56:12	MarkDuplicates	Tracking 252722 as yet unmatched pairs. 913 records in RAM.
+INFO	2026-04-21 02:56:17	MarkDuplicates	Read   110,000,000 records.  Elapsed time: 00:08:32s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:1,593,549
+INFO	2026-04-21 02:56:17	MarkDuplicates	Tracking 252789 as yet unmatched pairs. 47545 records in RAM.
+INFO	2026-04-21 02:56:22	MarkDuplicates	Read   111,000,000 records.  Elapsed time: 00:08:37s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:7,237,710
+INFO	2026-04-21 02:56:22	MarkDuplicates	Tracking 252213 as yet unmatched pairs. 44645 records in RAM.
+INFO	2026-04-21 02:56:26	MarkDuplicates	Read   112,000,000 records.  Elapsed time: 00:08:42s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:11,219,696
+INFO	2026-04-21 02:56:26	MarkDuplicates	Tracking 236217 as yet unmatched pairs. 25975 records in RAM.
+INFO	2026-04-21 02:56:31	MarkDuplicates	Read   113,000,000 records.  Elapsed time: 00:08:46s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:16,774,882
+INFO	2026-04-21 02:56:31	MarkDuplicates	Tracking 235480 as yet unmatched pairs. 22671 records in RAM.
+INFO	2026-04-21 02:56:35	MarkDuplicates	Read   114,000,000 records.  Elapsed time: 00:08:51s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:22,201,768
+INFO	2026-04-21 02:56:35	MarkDuplicates	Tracking 235054 as yet unmatched pairs. 20555 records in RAM.
+INFO	2026-04-21 02:56:40	MarkDuplicates	Read   115,000,000 records.  Elapsed time: 00:08:55s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:27,757,260
+INFO	2026-04-21 02:56:40	MarkDuplicates	Tracking 234152 as yet unmatched pairs. 17455 records in RAM.
+INFO	2026-04-21 02:56:44	MarkDuplicates	Read   116,000,000 records.  Elapsed time: 00:08:59s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:33,275,113
+INFO	2026-04-21 02:56:44	MarkDuplicates	Tracking 233560 as yet unmatched pairs. 15219 records in RAM.
+INFO	2026-04-21 02:56:49	MarkDuplicates	Read   117,000,000 records.  Elapsed time: 00:09:04s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:38,789,225
+INFO	2026-04-21 02:56:49	MarkDuplicates	Tracking 232960 as yet unmatched pairs. 12721 records in RAM.
+INFO	2026-04-21 02:56:53	MarkDuplicates	Read   118,000,000 records.  Elapsed time: 00:09:08s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:44,421,436
+INFO	2026-04-21 02:56:53	MarkDuplicates	Tracking 232292 as yet unmatched pairs. 10458 records in RAM.
+INFO	2026-04-21 02:56:57	MarkDuplicates	Read   119,000,000 records.  Elapsed time: 00:09:13s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:49,982,801
+INFO	2026-04-21 02:56:57	MarkDuplicates	Tracking 232032 as yet unmatched pairs. 7323 records in RAM.
+INFO	2026-04-21 02:57:02	MarkDuplicates	Read   120,000,000 records.  Elapsed time: 00:09:17s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:55,615,383
+INFO	2026-04-21 02:57:02	MarkDuplicates	Tracking 231078 as yet unmatched pairs. 3642 records in RAM.
+INFO	2026-04-21 02:57:06	MarkDuplicates	Read   121,000,000 records.  Elapsed time: 00:09:21s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch08:60,808,857
+INFO	2026-04-21 02:57:06	MarkDuplicates	Tracking 230080 as yet unmatched pairs. 935 records in RAM.
+INFO	2026-04-21 02:57:11	MarkDuplicates	Read   122,000,000 records.  Elapsed time: 00:09:26s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:2,356,044
+INFO	2026-04-21 02:57:11	MarkDuplicates	Tracking 229515 as yet unmatched pairs. 39869 records in RAM.
+INFO	2026-04-21 02:57:16	MarkDuplicates	Read   123,000,000 records.  Elapsed time: 00:09:31s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:7,980,145
+INFO	2026-04-21 02:57:16	MarkDuplicates	Tracking 228228 as yet unmatched pairs. 36530 records in RAM.
+INFO	2026-04-21 02:57:20	MarkDuplicates	Read   124,000,000 records.  Elapsed time: 00:09:35s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:13,510,154
+INFO	2026-04-21 02:57:20	MarkDuplicates	Tracking 227212 as yet unmatched pairs. 33695 records in RAM.
+INFO	2026-04-21 02:57:43	MarkDuplicates	Read   125,000,000 records.  Elapsed time: 00:09:58s.  Time for last 1,000,000:   22s.  Last read position: SL4.0ch09:19,042,093
+INFO	2026-04-21 02:57:43	MarkDuplicates	Tracking 225779 as yet unmatched pairs. 30175 records in RAM.
+INFO	2026-04-21 02:58:14	MarkDuplicates	Read   126,000,000 records.  Elapsed time: 00:10:29s.  Time for last 1,000,000:   31s.  Last read position: SL4.0ch09:24,615,468
+INFO	2026-04-21 02:58:14	MarkDuplicates	Tracking 224704 as yet unmatched pairs. 26978 records in RAM.
+INFO	2026-04-21 02:58:18	MarkDuplicates	Read   127,000,000 records.  Elapsed time: 00:10:34s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:30,088,045
+INFO	2026-04-21 02:58:18	MarkDuplicates	Tracking 223275 as yet unmatched pairs. 23876 records in RAM.
+INFO	2026-04-21 02:58:23	MarkDuplicates	Read   128,000,000 records.  Elapsed time: 00:10:38s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:35,190,977
+INFO	2026-04-21 02:58:23	MarkDuplicates	Tracking 222009 as yet unmatched pairs. 21233 records in RAM.
+INFO	2026-04-21 02:58:27	MarkDuplicates	Read   129,000,000 records.  Elapsed time: 00:10:42s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:40,712,204
+INFO	2026-04-21 02:58:27	MarkDuplicates	Tracking 220623 as yet unmatched pairs. 18193 records in RAM.
+INFO	2026-04-21 02:58:32	MarkDuplicates	Read   130,000,000 records.  Elapsed time: 00:10:47s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:46,221,106
+INFO	2026-04-21 02:58:32	MarkDuplicates	Tracking 219092 as yet unmatched pairs. 15196 records in RAM.
+INFO	2026-04-21 02:58:36	MarkDuplicates	Read   131,000,000 records.  Elapsed time: 00:10:51s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:51,681,279
+INFO	2026-04-21 02:58:36	MarkDuplicates	Tracking 217652 as yet unmatched pairs. 11820 records in RAM.
+INFO	2026-04-21 02:58:40	MarkDuplicates	Read   132,000,000 records.  Elapsed time: 00:10:55s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:57,060,607
+INFO	2026-04-21 02:58:40	MarkDuplicates	Tracking 216152 as yet unmatched pairs. 8587 records in RAM.
+INFO	2026-04-21 02:58:45	MarkDuplicates	Read   133,000,000 records.  Elapsed time: 00:11:00s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:62,722,449
+INFO	2026-04-21 02:58:45	MarkDuplicates	Tracking 214475 as yet unmatched pairs. 4970 records in RAM.
+INFO	2026-04-21 02:58:49	MarkDuplicates	Read   134,000,000 records.  Elapsed time: 00:11:04s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch09:68,365,678
+INFO	2026-04-21 02:58:49	MarkDuplicates	Tracking 212737 as yet unmatched pairs. 1314 records in RAM.
+INFO	2026-04-21 02:58:54	MarkDuplicates	Read   135,000,000 records.  Elapsed time: 00:11:09s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:3,661,935
+INFO	2026-04-21 02:58:54	MarkDuplicates	Tracking 210725 as yet unmatched pairs. 38340 records in RAM.
+INFO	2026-04-21 02:58:58	MarkDuplicates	Read   136,000,000 records.  Elapsed time: 00:11:13s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:9,238,216
+INFO	2026-04-21 02:58:58	MarkDuplicates	Tracking 209165 as yet unmatched pairs. 35476 records in RAM.
+INFO	2026-04-21 02:59:03	MarkDuplicates	Read   137,000,000 records.  Elapsed time: 00:11:18s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:14,734,714
+INFO	2026-04-21 02:59:03	MarkDuplicates	Tracking 207649 as yet unmatched pairs. 32170 records in RAM.
+INFO	2026-04-21 02:59:07	MarkDuplicates	Read   138,000,000 records.  Elapsed time: 00:11:22s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:20,132,866
+INFO	2026-04-21 02:59:07	MarkDuplicates	Tracking 205809 as yet unmatched pairs. 28531 records in RAM.
+INFO	2026-04-21 02:59:12	MarkDuplicates	Read   139,000,000 records.  Elapsed time: 00:11:27s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:25,171,056
+INFO	2026-04-21 02:59:12	MarkDuplicates	Tracking 203493 as yet unmatched pairs. 24893 records in RAM.
+INFO	2026-04-21 02:59:16	MarkDuplicates	Read   140,000,000 records.  Elapsed time: 00:11:31s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:30,532,239
+INFO	2026-04-21 02:59:16	MarkDuplicates	Tracking 201233 as yet unmatched pairs. 21400 records in RAM.
+INFO	2026-04-21 02:59:20	MarkDuplicates	Read   141,000,000 records.  Elapsed time: 00:11:36s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:36,031,066
+INFO	2026-04-21 02:59:20	MarkDuplicates	Tracking 199490 as yet unmatched pairs. 18642 records in RAM.
+INFO	2026-04-21 02:59:25	MarkDuplicates	Read   142,000,000 records.  Elapsed time: 00:11:40s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:41,494,996
+INFO	2026-04-21 02:59:25	MarkDuplicates	Tracking 197434 as yet unmatched pairs. 15350 records in RAM.
+INFO	2026-04-21 02:59:29	MarkDuplicates	Read   143,000,000 records.  Elapsed time: 00:11:44s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:46,720,630
+INFO	2026-04-21 02:59:29	MarkDuplicates	Tracking 195686 as yet unmatched pairs. 12169 records in RAM.
+INFO	2026-04-21 02:59:34	MarkDuplicates	Read   144,000,000 records.  Elapsed time: 00:11:49s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:52,261,875
+INFO	2026-04-21 02:59:34	MarkDuplicates	Tracking 193412 as yet unmatched pairs. 8155 records in RAM.
+INFO	2026-04-21 02:59:38	MarkDuplicates	Read   145,000,000 records.  Elapsed time: 00:11:53s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:57,725,987
+INFO	2026-04-21 02:59:38	MarkDuplicates	Tracking 191140 as yet unmatched pairs. 4484 records in RAM.
+INFO	2026-04-21 02:59:42	MarkDuplicates	Read   146,000,000 records.  Elapsed time: 00:11:58s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch10:63,239,749
+INFO	2026-04-21 02:59:42	MarkDuplicates	Tracking 189134 as yet unmatched pairs. 1102 records in RAM.
+INFO	2026-04-21 02:59:47	MarkDuplicates	Read   147,000,000 records.  Elapsed time: 00:12:03s.  Time for last 1,000,000:    5s.  Last read position: SL4.0ch11:4,065,490
+INFO	2026-04-21 02:59:47	MarkDuplicates	Tracking 187505 as yet unmatched pairs. 62235 records in RAM.
+INFO	2026-04-21 02:59:52	MarkDuplicates	Read   148,000,000 records.  Elapsed time: 00:12:07s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:9,753,368
+INFO	2026-04-21 02:59:52	MarkDuplicates	Tracking 183112 as yet unmatched pairs. 56360 records in RAM.
+INFO	2026-04-21 02:59:56	MarkDuplicates	Read   149,000,000 records.  Elapsed time: 00:12:12s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:15,439,289
+INFO	2026-04-21 02:59:56	MarkDuplicates	Tracking 176859 as yet unmatched pairs. 48513 records in RAM.
+INFO	2026-04-21 03:00:01	MarkDuplicates	Read   150,000,000 records.  Elapsed time: 00:12:16s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:20,929,824
+INFO	2026-04-21 03:00:01	MarkDuplicates	Tracking 163911 as yet unmatched pairs. 33967 records in RAM.
+INFO	2026-04-21 03:00:05	MarkDuplicates	Read   151,000,000 records.  Elapsed time: 00:12:21s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:26,825,721
+INFO	2026-04-21 03:00:05	MarkDuplicates	Tracking 158996 as yet unmatched pairs. 27850 records in RAM.
+INFO	2026-04-21 03:00:10	MarkDuplicates	Read   152,000,000 records.  Elapsed time: 00:12:25s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:32,462,737
+INFO	2026-04-21 03:00:10	MarkDuplicates	Tracking 154709 as yet unmatched pairs. 22530 records in RAM.
+INFO	2026-04-21 03:00:14	MarkDuplicates	Read   153,000,000 records.  Elapsed time: 00:12:30s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:38,072,681
+INFO	2026-04-21 03:00:14	MarkDuplicates	Tracking 150693 as yet unmatched pairs. 17340 records in RAM.
+INFO	2026-04-21 03:00:19	MarkDuplicates	Read   154,000,000 records.  Elapsed time: 00:12:34s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:43,686,556
+INFO	2026-04-21 03:00:19	MarkDuplicates	Tracking 146065 as yet unmatched pairs. 11714 records in RAM.
+INFO	2026-04-21 03:00:23	MarkDuplicates	Read   155,000,000 records.  Elapsed time: 00:12:39s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch11:49,110,132
+INFO	2026-04-21 03:00:23	MarkDuplicates	Tracking 140087 as yet unmatched pairs. 4406 records in RAM.
+INFO	2026-04-21 03:00:29	MarkDuplicates	Read   156,000,000 records.  Elapsed time: 00:12:44s.  Time for last 1,000,000:    5s.  Last read position: SL4.0ch12:156,905
+INFO	2026-04-21 03:00:29	MarkDuplicates	Tracking 135740 as yet unmatched pairs. 135740 records in RAM.
+INFO	2026-04-21 03:00:34	MarkDuplicates	Read   157,000,000 records.  Elapsed time: 00:12:49s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:5,826,378
+INFO	2026-04-21 03:00:34	MarkDuplicates	Tracking 133022 as yet unmatched pairs. 133022 records in RAM.
+INFO	2026-04-21 03:00:38	MarkDuplicates	Read   158,000,000 records.  Elapsed time: 00:12:53s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:11,423,326
+INFO	2026-04-21 03:00:38	MarkDuplicates	Tracking 128752 as yet unmatched pairs. 128752 records in RAM.
+INFO	2026-04-21 03:00:43	MarkDuplicates	Read   159,000,000 records.  Elapsed time: 00:12:58s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:16,963,798
+INFO	2026-04-21 03:00:43	MarkDuplicates	Tracking 124488 as yet unmatched pairs. 124488 records in RAM.
+INFO	2026-04-21 03:00:47	MarkDuplicates	Read   160,000,000 records.  Elapsed time: 00:13:02s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:22,283,244
+INFO	2026-04-21 03:00:47	MarkDuplicates	Tracking 121262 as yet unmatched pairs. 121262 records in RAM.
+INFO	2026-04-21 03:00:51	MarkDuplicates	Read   161,000,000 records.  Elapsed time: 00:13:07s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:27,757,677
+INFO	2026-04-21 03:00:51	MarkDuplicates	Tracking 117483 as yet unmatched pairs. 117483 records in RAM.
+INFO	2026-04-21 03:00:56	MarkDuplicates	Read   162,000,000 records.  Elapsed time: 00:13:11s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:33,174,765
+INFO	2026-04-21 03:00:56	MarkDuplicates	Tracking 108910 as yet unmatched pairs. 108910 records in RAM.
+INFO	2026-04-21 03:01:01	MarkDuplicates	Read   163,000,000 records.  Elapsed time: 00:13:16s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:37,772,119
+INFO	2026-04-21 03:01:01	MarkDuplicates	Tracking 103850 as yet unmatched pairs. 103850 records in RAM.
+INFO	2026-04-21 03:01:05	MarkDuplicates	Read   164,000,000 records.  Elapsed time: 00:13:20s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:43,415,170
+INFO	2026-04-21 03:01:05	MarkDuplicates	Tracking 99423 as yet unmatched pairs. 99423 records in RAM.
+INFO	2026-04-21 03:01:09	MarkDuplicates	Read   165,000,000 records.  Elapsed time: 00:13:25s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:48,992,088
+INFO	2026-04-21 03:01:09	MarkDuplicates	Tracking 93759 as yet unmatched pairs. 93759 records in RAM.
+INFO	2026-04-21 03:01:14	MarkDuplicates	Read   166,000,000 records.  Elapsed time: 00:13:29s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:54,581,759
+INFO	2026-04-21 03:01:14	MarkDuplicates	Tracking 88955 as yet unmatched pairs. 88955 records in RAM.
+INFO	2026-04-21 03:01:18	MarkDuplicates	Read   167,000,000 records.  Elapsed time: 00:13:34s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:60,252,559
+INFO	2026-04-21 03:01:18	MarkDuplicates	Tracking 83875 as yet unmatched pairs. 83875 records in RAM.
+INFO	2026-04-21 03:01:22	MarkDuplicates	Read   168,000,000 records.  Elapsed time: 00:13:38s.  Time for last 1,000,000:    4s.  Last read position: SL4.0ch12:63,714,550
+INFO	2026-04-21 03:01:22	MarkDuplicates	Tracking 3126 as yet unmatched pairs. 3126 records in RAM.
+INFO	2026-04-21 03:01:26	MarkDuplicates	Read 168755654 records. 0 pairs never matched.
+INFO	2026-04-21 03:01:48	MarkDuplicates	After buildSortedReadEndLists freeMemory: 354919416; totalMemory: 369098752; maxMemory: 17179869184
+INFO	2026-04-21 03:01:48	MarkDuplicates	Will retain up to 536870912 duplicate indices before spilling to disk.
+INFO	2026-04-21 03:01:49	MarkDuplicates	Traversing read pair information and detecting duplicates.
+INFO	2026-04-21 03:02:39	MarkDuplicates	Traversing fragment information and detecting duplicates.
+WARNING	2026-04-21 03:02:39	SortingCollection	There is not enough memory per file for buffering. Reading will be unbuffered.
+INFO	2026-04-21 03:03:38	MarkDuplicates	Sorting list of duplicate records.
+INFO	2026-04-21 03:03:39	MarkDuplicates	After generateDuplicateIndexes freeMemory: 3098243936; totalMemory: 7415529472; maxMemory: 17179869184
+INFO	2026-04-21 03:03:39	MarkDuplicates	Marking 34831479 records as duplicates.
+INFO	2026-04-21 03:03:39	MarkDuplicates	Found 0 optical duplicate clusters.
+INFO	2026-04-21 03:03:39	MarkDuplicates	Reads are assumed to be ordered by: coordinate
+INFO	2026-04-21 03:05:44	MarkDuplicates	Written    10,000,000 records.  Elapsed time: 00:02:05s.  Time for last 10,000,000:  125s.  Last read position: SL4.0ch00:2,921,063
+INFO	2026-04-21 03:07:49	MarkDuplicates	Written    20,000,000 records.  Elapsed time: 00:04:10s.  Time for last 10,000,000:  124s.  Last read position: SL4.0ch00:6,283,001
+INFO	2026-04-21 03:09:59	MarkDuplicates	Written    30,000,000 records.  Elapsed time: 00:06:20s.  Time for last 10,000,000:  130s.  Last read position: SL4.0ch01:14,008,014
+INFO	2026-04-21 03:12:10	MarkDuplicates	Written    40,000,000 records.  Elapsed time: 00:08:31s.  Time for last 10,000,000:  130s.  Last read position: SL4.0ch01:67,731,122
+INFO	2026-04-21 03:14:19	MarkDuplicates	Written    50,000,000 records.  Elapsed time: 00:10:40s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch02:31,551,758
+INFO	2026-04-21 03:16:29	MarkDuplicates	Written    60,000,000 records.  Elapsed time: 00:12:50s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch03:33,145,444
+INFO	2026-04-21 03:18:38	MarkDuplicates	Written    70,000,000 records.  Elapsed time: 00:14:59s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch04:23,273,604
+INFO	2026-04-21 03:20:48	MarkDuplicates	Written    80,000,000 records.  Elapsed time: 00:17:09s.  Time for last 10,000,000:  130s.  Last read position: SL4.0ch05:14,301,951
+INFO	2026-04-21 03:22:58	MarkDuplicates	Written    90,000,000 records.  Elapsed time: 00:19:18s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch06:4,657,153
+INFO	2026-04-21 03:25:07	MarkDuplicates	Written   100,000,000 records.  Elapsed time: 00:21:28s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch07:13,163,995
+INFO	2026-04-21 03:27:17	MarkDuplicates	Written   110,000,000 records.  Elapsed time: 00:23:37s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch08:1,593,549
+INFO	2026-04-21 03:29:28	MarkDuplicates	Written   120,000,000 records.  Elapsed time: 00:25:48s.  Time for last 10,000,000:  130s.  Last read position: SL4.0ch08:55,615,383
+INFO	2026-04-21 03:31:36	MarkDuplicates	Written   130,000,000 records.  Elapsed time: 00:27:57s.  Time for last 10,000,000:  128s.  Last read position: SL4.0ch09:46,221,106
+INFO	2026-04-21 03:33:46	MarkDuplicates	Written   140,000,000 records.  Elapsed time: 00:30:07s.  Time for last 10,000,000:  129s.  Last read position: SL4.0ch10:30,532,239
+INFO	2026-04-21 03:35:58	MarkDuplicates	Written   150,000,000 records.  Elapsed time: 00:32:18s.  Time for last 10,000,000:  131s.  Last read position: SL4.0ch11:20,929,824
+INFO	2026-04-21 03:38:10	MarkDuplicates	Written   160,000,000 records.  Elapsed time: 00:34:30s.  Time for last 10,000,000:  132s.  Last read position: SL4.0ch12:22,283,244
+INFO	2026-04-21 03:40:07	MarkDuplicates	Writing complete. Closing input iterator.
+INFO	2026-04-21 03:40:07	MarkDuplicates	Duplicate Index cleanup.
+INFO	2026-04-21 03:40:07	MarkDuplicates	Getting Memory Stats.
+INFO	2026-04-21 03:40:07	MarkDuplicates	Before output close freeMemory: 103086896; totalMemory: 117440512; maxMemory: 17179869184
+INFO	2026-04-21 03:40:07	MarkDuplicates	Closed outputs. Getting more Memory Stats.
+INFO	2026-04-21 03:40:07	MarkDuplicates	After output close freeMemory: 47220720; totalMemory: 58720256; maxMemory: 17179869184
+[Tue Apr 21 03:40:07 EDT 2026] picard.sam.markduplicates.MarkDuplicates done. Elapsed time: 52.49 minutes.
+Runtime.totalMemory()=58720256
+Note: none of --samples-file, --ploidy or --ploidy-file given, assuming all sites are diploid
+[mpileup] 1 samples in 1 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float

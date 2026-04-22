@@ -1,0 +1,24 @@
+Expected 15 samples, found 5 dedup BAMs
+WARNING: Not all samples have completed alignment.
+Missing samples:
+  SRR27639555
+  SRR27639560
+  SRR27639561
+  SRR27639563
+  SRR27639567
+  SRR27639578
+  SRR27639586
+  SRR27639597
+  SRR27639599
+  SRR27639600
+Proceeding with available samples...
+Starting joint variant calling across 5 samples...
+
+========== JOINT CALLING COMPLETE ==========
+Samples:  5
+Variants: 1556987
+SNPs:     1306320
+Indels:   250667
+Ts/Tv:    1.28
+Output:   variants/all_samples.filtered.vcf.gz
+============================================

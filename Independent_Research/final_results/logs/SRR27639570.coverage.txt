@@ -1,0 +1,1 @@
+Mean coverage: 23.8403
